@@ -1,0 +1,28 @@
+.header-block {
+	text-align: center;
+
+	&__title {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 142.5%;
+		letter-spacing: 0.2px;
+
+		&:not(:last-child) {
+			margin: 0 0 1rem 0;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 3.5rem;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 3rem;
+		}
+	}
+
+	&__subtitle {
+		color: $c-text-second;
+		line-height: 142.857%;
+		letter-spacing: 0.2px;
+	}
+}

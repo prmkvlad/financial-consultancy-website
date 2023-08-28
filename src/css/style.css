@@ -73,7 +73,7 @@ body {
   font-weight: 500;
   font-size: 1.4rem;
   color: #252B42;
-  background-color: #FFF;
+  background-color: #FAFAFA;
 }
 
 .wrapper {
@@ -129,6 +129,34 @@ body {
   letter-spacing: 0.1px;
 }
 .item-service__text {
+  color: #737373;
+  line-height: 142.857%;
+  letter-spacing: 0.2px;
+}
+
+.header-block {
+  text-align: center;
+}
+.header-block__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 142.5%;
+  letter-spacing: 0.2px;
+}
+.header-block__title:not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+@media (max-width: 992px) {
+  .header-block__title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .header-block__title {
+    font-size: 3rem;
+  }
+}
+.header-block__subtitle {
   color: #737373;
   line-height: 142.857%;
   letter-spacing: 0.2px;
@@ -324,4 +352,72 @@ body {
   .services__item {
     padding: 2.5rem;
   }
+}
+
+.advantages {
+  padding: 8rem 0;
+}
+@media (max-width: 992px) {
+  .advantages {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding: 4rem 0;
+  }
+}
+.advantages__header {
+  margin: 0 0 5rem 0;
+}
+@media (max-width: 767px) {
+  .advantages__header {
+    font-size: 2.5rem;
+  }
+}
+.advantages__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem -3rem;
+}
+.advantages__column {
+  padding: 0 1.5rem;
+  margin: 0 0 3rem 0;
+  flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+  .advantages__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 560px) {
+  .advantages__column {
+    flex: 0 1 100%;
+  }
+}
+.advantages__item {
+  height: 100%;
+  background-color: #FFF;
+  padding: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+.advantages__item > *:not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+.advantages__icon {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.advantages__value {
+  font-size: 4rem;
+  line-height: 142.5%;
+  letter-spacing: 0.2px;
+}
+.advantages__text {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.1px;
 }
