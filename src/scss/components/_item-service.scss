@@ -1,0 +1,33 @@
+.item-service {
+
+	&>*:not(:last-child) {
+		margin: 0 0 1rem 0;
+	}
+
+	&--green {
+		background-color: $c-secondary-1 !important;
+
+		& .item-service__title {
+			color: #FFF;
+		}
+
+		& .item-service__text {
+			color: #FFF;
+		}
+	}
+
+	// &__icon {}
+
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 133.333%;
+		letter-spacing: 0.1px;
+	}
+
+	&__text {
+		color: $c-text-second;
+		line-height: 142.857%;
+		letter-spacing: 0.2px;
+	}
+}

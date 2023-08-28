@@ -3,14 +3,16 @@
 
 //base
 @import 'base/reset';
-@import 'base/fonts';
 @import 'base/global';
 
 //components
+@import 'components/item-service';
 
 //layouts
 @import 'layout/header';
+@import 'layout/main';
 @import 'layout/footer';
 
 //sections
 @import 'sections/hero';
+@import 'sections/services';

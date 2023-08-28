@@ -1,0 +1,42 @@
+.services {
+
+	&__body {
+
+		@media (min-width: 670px) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -1.5rem;
+		}
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+
+		@media (min-width: 670px) {
+			padding: 0 1.5rem;
+		}
+
+		@media (max-width: 992px) {
+			flex: 0 1 50%;
+
+			&:not(:last-child) {
+				margin: 0 0 3rem 0;
+			}
+
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
+	}
+
+	&__item {
+		height: 100%;
+		box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+		background-color: #FFF;
+		padding: 3.5rem;
+
+		@media (max-width: 479px) {
+			padding: 2.5rem;
+		}
+	}
+}
