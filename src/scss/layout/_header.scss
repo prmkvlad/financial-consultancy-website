@@ -1,0 +1,60 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+
+	&__container {
+		display: flex;
+		gap: 13.3rem;
+		min-height: 10.4rem;
+		align-items: center;
+
+		@media (max-width: 992px) {
+			gap: 8rem;
+		}
+
+		@media (max-width: 767px) {
+			gap: 4rem;
+		}
+
+		@media (max-width: 479px) {
+			gap: 2rem;
+			min-height: 7rem;
+		}
+	}
+
+	&__logo {
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 133.333%;
+		letter-spacing: 0.1px;
+	}
+
+	&__menu {
+		padding: 0.5rem 0;
+	}
+}
+
+.menu {
+
+	&__list {
+		display: flex;
+		gap: 2.1rem;
+		flex-wrap: wrap;
+	}
+
+	// &__item {}
+
+	&__link {
+		color: $c-text-second;
+		font-weight: 600;
+		line-height: 171.429%;
+		letter-spacing: 0.2px;
+
+		@media (max-width: 479px) {
+			font-size: 1.8rem;
+		}
+	}
+}
