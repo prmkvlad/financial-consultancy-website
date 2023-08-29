@@ -1,0 +1,97 @@
+.subscribe {
+	position: relative;
+	padding: 0 0 2rem 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 7.7rem;
+		background-color: $c-text;
+	}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+		padding: 3rem 5rem;
+		align-items: center;
+		background-color: $c-secondary-2;
+		border-radius: 2px;
+
+		@media (min-width: 1070px) {
+			margin: 0 3rem;
+		}
+
+		@media (min-width: 810px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@media (max-width: 810px) {
+			margin: 0 -1.5rem;
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	&__title {
+		color: #FFF;
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 133.333%;
+		letter-spacing: 0.1px;
+
+		@media (max-width: 810px) {
+			margin: 0 0 2rem 0;
+		}
+
+		@media (min-width: 810px) {
+			max-width: 26.6rem;
+		}
+	}
+
+	&__form {
+		flex: 0 1 50%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__input {
+		width: 100%;
+		flex: 1 1 auto;
+		min-height: 5.8rem;
+		padding: 0 2rem;
+		border-radius: 5px;
+		color: $c-text-second;
+		border: 1px solid #E6E6E6;
+		border-right: 0;
+		background: #F9F9F9;
+		border-radius: 5px 0 0 5px;
+
+		&:focus {
+			color: #000;
+		}
+
+		@media (max-width: 810px) {
+			padding: 0 1.5rem;
+		}
+	}
+
+	&__button {
+		padding: 0 2.2rem;
+		border-radius: 0px 5px 5px 0px;
+		border: 1px solid #E6E6E6;
+		background: $c-accent;
+		display: flex;
+		min-height: 5.8rem;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #FFF;
+
+		@media (max-width: 810px) {
+			padding: 0 1.5rem;
+		}
+	}
+}
