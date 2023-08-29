@@ -1,0 +1,41 @@
+.item-practice {
+	background-color: #FFF;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__content {
+		padding: 3rem;
+		flex: 1 1 auto;
+	}
+
+	&__link {
+		display: inline-block;
+
+		&:not(:last-child) {
+			margin: 0 0 1.5rem 0;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+
+	&__text {
+		color: $c-text-second;
+		line-height: 142.857%;
+		letter-spacing: 0.2px;
+	}
+
+	&__image {
+		display: block;
+		padding: 0 0 60% 0;
+	}
+}
