@@ -226,6 +226,31 @@ body {
   letter-spacing: 0.2px;
 }
 
+.clients {
+  background-color: #FAFAFA;
+  padding: 5rem 0;
+}
+@media (max-width: 767px) {
+  .clients {
+    padding: 3rem 0;
+  }
+}
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.clients__item {
+  padding: 0.8rem 1.5rem;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 14rem;
+}
+.clients__item img {
+  max-width: 100%;
+}
+
 .header {
   position: absolute;
   width: 100%;
