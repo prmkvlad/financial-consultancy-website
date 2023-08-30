@@ -250,6 +250,72 @@ body {
   max-width: 100%;
 }
 
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  padding: 5rem 1.5rem;
+}
+.item-getintouch > *:not(:last-child) {
+  margin: 0 0 1.5rem;
+}
+.item-getintouch--active {
+  padding: 8rem 1.5rem;
+  background-color: #252B42;
+  color: #FFF;
+}
+.item-getintouch--active .item-getintouch__button {
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+@media (max-width: 992px) {
+  .item-getintouch--active {
+    padding: 5rem 1.5rem;
+  }
+}
+.item-getintouch__emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-getintouch__email {
+  font-weight: 600;
+  line-height: 171.429%;
+  letter-spacing: 0.2px;
+}
+.item-getintouch__email:hover {
+  text-decoration: underline;
+}
+.item-getintouch__label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+.item-getintouch__button {
+  padding: 0.5rem 2rem;
+  color: #FF7B47;
+  font-weight: 600;
+  line-height: 171.429%;
+  letter-spacing: 0.2px;
+  border: 1px solid #FF7B47;
+  border-radius: 5px;
+  min-height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.item-getintouch__button:hover {
+  border: 1px solid #FF7B47;
+  background-color: #FF7B47;
+  color: #FFF;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -755,4 +821,39 @@ body {
   .subscribe__button {
     padding: 0 1.5rem;
   }
+}
+
+.getintouch {
+  padding: 8rem 0 13.5rem 0;
+}
+@media (max-width: 992px) {
+  .getintouch {
+    padding: 5rem 0;
+  }
+}
+.getintouch__header {
+  margin: 0 0 8rem 0;
+}
+@media (max-width: 992px) {
+  .getintouch__header {
+    margin: 0 0 5rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .getintouch__header {
+    margin: 0 0 3rem 0;
+  }
+}
+.getintouch__items {
+  margin: 0 -1.5rem;
+}
+@media (min-width: 992px) {
+  .getintouch__items {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.getintouch__item {
+  flex: 0 1 33.333%;
 }
