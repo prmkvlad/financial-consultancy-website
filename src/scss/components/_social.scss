@@ -1,0 +1,15 @@
+.social {
+	display: flex;
+	align-items: center;
+
+	&__item {
+
+		&:not(:last-child) {
+			margin: 0 2rem 0 0;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

@@ -54,22 +54,33 @@
 		justify-content: center;
 		align-items: center;
 		padding: 0.5rem 3.6rem;
-		background: $c-accent;
+		background-color: $c-accent;
 		border-radius: 3.7rem;
 		color: #FFF;
 		font-weight: 700;
 		line-height: 150%;
 		letter-spacing: 0.2px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background-color: #FFF;
+			color: $c-accent;
+		}
 
 		@media (max-width: 479px) {
 			flex: 1 1 auto;
 		}
-	}
 
-	&__btn--border {
-		background: none;
-		color: $c-secondary-1;
-		border: 1px solid $c-secondary-1;
+		&--border {
+			background: none;
+			color: $c-secondary-1;
+			border: 1px solid $c-secondary-1;
+
+			&:hover {
+				background-color: $c-secondary-1;
+				color: #FFF;
+			}
+		}
 	}
 
 	&__image {

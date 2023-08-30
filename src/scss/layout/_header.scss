@@ -53,6 +53,10 @@
 		line-height: 171.429%;
 		letter-spacing: 0.2px;
 
+		&:hover {
+			text-decoration: underline;
+		}
+
 		@media (max-width: 479px) {
 			font-size: 1.8rem;
 		}
