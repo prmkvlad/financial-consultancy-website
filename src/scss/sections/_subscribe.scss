@@ -82,13 +82,19 @@
 		padding: 0 2.2rem;
 		border-radius: 0px 5px 5px 0px;
 		border: 1px solid #E6E6E6;
-		background: $c-accent;
+		background-color: $c-accent;
 		display: flex;
 		min-height: 5.8rem;
+		transition: background-color 0.3s ease 0s;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		color: #FFF;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #e67448;
+		}
 
 		@media (max-width: 810px) {
 			padding: 0 1.5rem;
