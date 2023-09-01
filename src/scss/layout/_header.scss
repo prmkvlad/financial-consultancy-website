@@ -11,17 +11,8 @@
 		min-height: 10.4rem;
 		align-items: center;
 
-		@media (max-width: 992px) {
-			gap: 8rem;
-		}
-
-		@media (max-width: 767px) {
-			gap: 4rem;
-		}
-
-		@media (max-width: 479px) {
-			gap: 2rem;
-			min-height: 7rem;
+		@media (max-width: 576px) {
+			justify-content: space-between;
 		}
 	}
 
@@ -34,31 +25,5 @@
 
 	&__menu {
 		padding: 0.5rem 0;
-	}
-}
-
-.menu {
-
-	&__list {
-		display: flex;
-		gap: 2.1rem;
-		flex-wrap: wrap;
-	}
-
-	// &__item {}
-
-	&__link {
-		color: $c-text-second;
-		font-weight: 600;
-		line-height: 171.429%;
-		letter-spacing: 0.2px;
-
-		&:hover {
-			text-decoration: underline;
-		}
-
-		@media (max-width: 479px) {
-			font-size: 1.8rem;
-		}
 	}
 }

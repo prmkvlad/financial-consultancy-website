@@ -10,25 +10,24 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="home">
 			<div class="header__container container">
 				<a class="header__logo" href="">Relvise</a>
-				<nav class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a class="menu__link" href="">Home</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="">Product</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="">Pricing</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+							<li class="menu__item"><a class="menu__link" href="#product">Product</a></li>
+							<li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+							<li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 
@@ -141,7 +140,7 @@
 				</div>
 			</section>
 
-			<section class="practice">
+			<section class="practice" id="product">
 				<div class="container">
 					<div class="practice__header header-block">
 						<h2 class="header-block__title">Practice Advice</h2>
@@ -215,7 +214,7 @@
 				</div>
 			</section>
 
-			<section class="whoweare">
+			<section class="whoweare" id="about">
 				<div class="container">
 					<div class="whoweare__header header-block">
 						<h2 class="header-block__title">Who We Are</h2>
@@ -306,7 +305,7 @@
 				</div>
 			</section>
 
-			<section class="getintouch">
+			<section class="getintouch" id="contact">
 				<div class="container">
 					<div class="getintouch__header header-block">
 						<h2 class="header-block__title">Get In Touch</h2>
