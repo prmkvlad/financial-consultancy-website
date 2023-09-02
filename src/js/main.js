@@ -5,7 +5,7 @@ const body = document.body;
 
 if (menu && menuBtn) {
 	menuBtn.addEventListener('click', () => {
-		window.scrollTo(0, 0)
+		body.scrollTo({ top: 0 })
 		menu.classList.toggle('active')
 		menuBtn.classList.toggle('active')
 		body.classList.toggle('lock')
