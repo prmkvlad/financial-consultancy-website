@@ -1,0 +1,22 @@
+.menu-footer {
+
+	// &__list {}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin: 0 0 1rem 0;
+		}
+	}
+
+	&__link {
+		color: #FFF;
+		font-weight: 600;
+		line-height: 171.429%;
+		letter-spacing: 0.2px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

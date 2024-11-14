@@ -1,0 +1,75 @@
+.item-getintouch {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
+	padding: 5rem 1.5rem;
+
+	&>*:not(:last-child) {
+		margin: 0 0 1.5rem;
+	}
+
+	&--active {
+		padding: 8rem 1.5rem;
+		background-color: $c-text;
+		color: #FFF;
+
+		& .item-getintouch__button {
+			border: 1px solid #FFF;
+			color: #FFF;
+		}
+
+		@media (max-width: 992px) {
+			padding: 5rem 1.5rem;
+		}
+	}
+
+	// &__icon {}
+
+	&__emails {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__email {
+		font-weight: 600;
+		line-height: 171.429%;
+		letter-spacing: 0.2px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__label {
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+
+	&__button {
+		padding: 0.5rem 2rem;
+		color: $c-accent;
+		font-weight: 600;
+		line-height: 171.429%;
+		letter-spacing: 0.2px;
+		border: 1px solid $c-accent;
+		border-radius: 5px;
+		min-height: 4.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			border: 1px solid $c-accent;
+			background-color: $c-accent;
+			color: #FFF;
+		}
+	}
+}

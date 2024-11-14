@@ -1,0 +1,25 @@
+.partners {
+	padding: 5rem 0;
+
+	@media (max-width: 767px) {
+		padding: 3rem 0;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		padding: 0.8rem 1.5rem;
+		flex: 0 1 16.6667%;
+		text-align: center;
+		min-width: 14rem;
+
+		& img {
+			max-width: 100%;
+		}
+	}
+}

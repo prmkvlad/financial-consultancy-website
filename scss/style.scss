@@ -1,0 +1,33 @@
+//abstract
+@import 'abstracts/vars';
+
+//base
+@import 'base/reset';
+@import 'base/global';
+
+//components
+@import 'components/menu';
+@import 'components/item-service';
+@import 'components/header-block';
+@import 'components/item-practice';
+@import 'components/item-whoweare';
+@import 'components/partners';
+@import 'components/item-getintouch';
+@import 'components/menu-footer';
+@import 'components/contact-footer';
+@import 'components/social';
+
+//layouts
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+//sections
+@import 'sections/hero';
+@import 'sections/services';
+@import 'sections/advantages';
+@import 'sections/practice';
+@import 'sections/whoweare';
+@import 'sections/subscribe';
+@import 'sections/getintouch';
+@import 'sections/contact';

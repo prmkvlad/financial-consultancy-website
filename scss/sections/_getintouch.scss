@@ -1,0 +1,34 @@
+.getintouch {
+	padding: 8rem 0 13.5rem 0;
+	background-color: #F3F3F3;
+
+	@media (max-width: 992px) {
+		padding: 5rem 0;
+	}
+
+	&__header {
+		margin: 0 0 8rem 0;
+
+		@media (max-width: 992px) {
+			margin: 0 0 5rem 0;
+		}
+
+		@media (max-width: 767px) {
+			margin: 0 0 3rem 0;
+		}
+	}
+
+	&__items {
+		margin: 0 -1.5rem;
+
+		@media (min-width: 992px) {
+			margin: 0;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+	}
+}
